@@ -30,7 +30,7 @@ background home: #3772FF
 
 rodape: #36D6AD
 
-detalhes: #737380 #8f8c8c #F6F6F6
+detalhes: '#737380 #8f8c8c #F6F6F6
 
 botão: #FC7071
 
