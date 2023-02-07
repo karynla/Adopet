@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adote um Peludo">
+    <meta name="keywords" content="AdoçãoPet Consiente, Adote não Compre, Adote Um Peludo">
+    <meta name="author" content="Karyn Laís Alves">
+    <title>Adopet Perfil</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+            <img src="img/fundoTopoHomeMobile.svg" class="cabecalho__fundo">
+            <nav class="menu-nav--sobreposto">
+                <ul class="cabecalho__menu-nav">
+                    <li><a href="Inicial.html"><img src="img/LogoTablet.svg" class="cabecalho__menu-nav--item-logo"></a></li>
+                    <li class="cabecalho__menu-nav--item">
+                        <a href="home.html" class="cabecalho__menu-nav--link"><img src="img/iconeHomeMobile.svg"></a>
+                    </li>
+                    <li class="cabecalho__menu-nav--item">
+                        <a href="mensagem.html" class="cabecalho__menu-nav--link"><img src="img/iconeMensagemMobile.svg"></a>
+                    </li>
+                </ul>
+                <ul class="cabecalho__foto-perfil">
+                        <figure class="perfil-main__personal-figure-menu">
+                            <img src="img/foto.png" class="perfil-main__personal-avatar-menu" alt="avatar">
+                        </figure>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <img src="img/fundoLadoDireito.svg" class="inicial__fundo fundo__lado-direto-none">
+    <main>
+        <section class="perfil-main__container-sobreposto">
+            <h1 class="perfil-main__titulo">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</h1>
+            <h2 class="perfil-main__titulo-texto-2">Perfil</h2>
+        </section>
+        <form action="#" class="perfil-main__container--formulario">
+            <div class="personal-image">
+                <label class="label perfil-main__personal-image">
+                    <label for="foto" class="perfil-main__foto-titulo">Foto</label>
+                <input type="file" />
+                <figure class="personal-figure">
+                    <img src="img/foto.png" class="personal-avatar" alt="avatar">
+                    <figcaption class="personal-figcaption">
+                    <img src="https://raw.githubusercontent.com/ThiagoLuizNunes/angular-boilerplate/master/src/assets/imgs/camera-white.png">
+                    </figcaption>
+                </figure>
+                </label>
+                <p class="perfil-main__foto-texto">Clique na foto para editar</p>
+            </div>
+
+            <div class="perfil-main__campo">
+                <label for="nome" class="perfil-main__titulo">Nome</label>
+				<input type="nome" id="nome" class="perfil-main__input" required placeholder="Insira seu nome completo" required>
+            </div>
+
+            <div class="perfil-main__campo">
+                <label for="telefone" class="perfil-main__titulo">Telefone</label>
+				<input type="tel" id="telefone" class="perfil-main__input" placeholder="Insira seu telefone e/ou whatsapp" required>
+            </div>
+            
+            <div class="perfil-main__campo">
+                <label for="cidade" class="perfil-main__titulo">Cidade</label>
+				<input type="cidade" id="cidade" class="perfil-main__input" required placeholder="Insira sua cidade" required>
+            </div>
+
+            <div class="perfil-main__campo">
+            <label for="sobre" class="perfil-main__titulo">Sobre</label>
+				<textarea cols="50" rows="10" id="sobre" class="perfil-main__input-texto" placeholder="Escreva sobre você" required></textarea>
+            </div>
+            
+            <div class="main__botao--cadastrar">
+                <button type="submit" class="main__botao">Salvar</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <p class="footer__texto">Adopet - 2023</p>
+    </footer>
+</body>
+</html>

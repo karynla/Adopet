@@ -1,0 +1,113 @@
+.inicial__body {
+    background-color: var(--azul-fundo);
+    color: var(--branco-fonte);
+}
+
+/* cabecalho */
+.inicial-cabecalho__container--conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 50%;
+    line-height: 6em;
+    position: absolute;
+    text-align: center;
+    top: 15rem;
+    transform: translate(-50%, -50%);
+}
+
+.inicial-cabecalho__texto {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+/*  main */
+.inicial-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inicial-main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inicial-main__texto {
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0.5em 4em 1.5em 4em;
+    text-align: center;
+}
+
+.inicial-main__ilustracao-pets {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.inicial-main__ilustracao-pets--maior768, .inicial-main__texto-maior768 {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .inicial-main__ilustracao-pets--item, .inicial-main__texto {
+        display: none;
+    }
+
+    .inicial-main__ilustracao-pets--maior768, .inicial-main__ilustracao-pets--maior768 {
+        display: flex;
+    }
+
+    .inicial-main__texto-maior768 {
+        display: block;
+        font-weight: 300;
+        line-height: 26px;
+        margin: 0 15rem 2.5rem;
+        text-align: center;
+    }
+
+    .inicial-cabecalho__logo {
+        width: 16rem;
+    }
+
+    .inicial-cabecalho__texto {
+        font-size: 28px;
+        height: 3rem;
+        margin-top: 1rem;
+    }
+
+    .inicial-cabecalho__container--conteudo {
+        top: 20rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .inicial-cabecalho__container--conteudo {
+        top: 18rem;
+    }
+
+    .inicial-main {
+        margin: 0 auto;
+        width: 60vw;
+    }
+
+    .inicial-main__texto-maior768 {
+        line-height: 30px;
+        margin: 0 18rem 2.5rem;
+
+    }
+
+    .inicial-main {
+        left: 50%;
+        position: absolute;
+        top: 33rem;
+        transform: translate(-50%, -50%);
+    }
+
+    .inicial-main__ilustracao-pets {
+        margin-top: 14rem;
+    }
+}

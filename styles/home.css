@@ -1,0 +1,130 @@
+/*  main */
+.home-main__container-texto {
+    display: flex;
+    font-weight: 300;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 15rem;
+    transform: translate(-50%, -50%);
+    width: 85vw;  
+}
+
+.home-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    width: 85vw; 
+    margin: 1rem auto 1rem;
+    left: 50%;
+    position: absolute;
+    top: 80rem;
+    transform: translate(-50%, -50%);
+}
+
+.home-main__pet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
+.home-main__pet:first-child {
+    margin-top: 0.5rem;
+}
+
+.home-main__titulo {
+    color: var(--azul-fonte);
+    line-height: 20px;
+    text-align: center;
+    margin: 0 2rem;
+    
+}
+
+.home-main__pet-container-conteudo {
+    color: var(--cinza-claro-fonte);
+    text-align: start;
+    margin-left: 1em;
+}
+
+.home-main__pet-titulo {
+    color: var(--azul-fonte);
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.home-main__pet-item {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.home-main__pet-localizacao {
+    font-size: 12px;
+    margin-top: 2em;
+}
+
+
+.home-main__pet--link {
+    color: var(--cinza-claro-fonte);
+    font-size: 10px;
+    margin: 0.3em 0 0 1em;
+    text-decoration: none;
+}
+
+.home-main__pet--mensagem {
+    align-content: center;
+    display: flex;
+    margin-top: 0.5em;
+    
+}
+
+.home-main__pet--link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 768px) {
+    .home-main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 0;
+        top: 57rem;
+        width: 90%;
+    }
+
+    .home-main__pet {
+        width: 50%;
+    }
+
+    .home-main__pet:first-child {
+        margin-top: 3.5rem;
+    }
+
+    .home-main__container-texto {
+        top: 20rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .home-main__titulo {
+        line-height: 30px;
+    }
+
+    .home-main__container-texto {
+        top: 15rem;
+    }
+
+    .home-main {
+        margin-left: 2rem;
+        top: 38rem;
+    }
+
+    .home-main__pet {
+        width: 30%;
+    }
+}

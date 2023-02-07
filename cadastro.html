@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adote um Peludo">
+    <meta name="keywords" content="AdoçãoPet Consiente, Adote não Compre, Adote Um Peludo">
+    <meta name="author" content="Karyn Laís Alves">
+    <title>Adopet Cadastro</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+            <img src="img/fundoTopoHomeMobile.svg" class="cabecalho__fundo">
+            <nav class="menu-nav--sobreposto">
+                <ul class="cabecalho__menu-nav">
+                    <li><a href="Inicial.html"><img src="img/LogoTablet.svg" class="cabecalho__menu-nav--item-logo"></a></li>
+                    <li class="cabecalho__menu-nav--item">
+                        <a href="home.html" class="cabecalho__menu-nav--link"><img src="img/iconeHomeMobile.svg"></a>
+                    </li>
+                    <li class="cabecalho__menu-nav--item">
+                        <a href="mensagem.html" class="cabecalho__menu-nav--link"><img src="img/iconeMensagemMobile.svg"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <img src="img/fundoTopoPatasMobile.png" alt="Ilustração de três patas de pets" class="cabecalho__ilustracao-patas">
+        <img src="img/fundoTopoPatasMaior768.png" alt="Ilustração de três patas de pets" class="cabecalho__ilustracao-patas-maior768">
+    </header>
+        <img src="img/fundoLadoDireito.svg" class="inicial__fundo fundo__lado-direto-none">
+
+        <img src="img/logoAzulMobile.svg" alt="Logo Adopet" class="cabecalho__logo-azul">
+
+    <main class="cadastro__main">
+        <section class="cadastro-main__container--conteudo">
+            <p class="cadastro-main__texto">Ainda não tem cadastro?</p>
+            <p class="cadastro-main__texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+        </section>
+
+        <form action="#" class="cadastro-main__container--formulario">
+
+            <div class="cadastro-main__campo">
+                <label for="email" class="cadastro-main__titulo">Email</label>
+				<input type="email" id="email" class="cadastro-main__input" required placeholder="Escolha seu melhor email" required>
+            </div>
+
+            <div class="cadastro-main__campo">
+                <label for="nome" class="cadastro-main__titulo">Nome</label>
+				<input type="nome" id="email" class="cadastro-main__input" required placeholder="Digite seu nome completo" required>
+            </div>
+    
+            <div class="cadastro-main__senha cadastro-main__campo">
+                <label for="email" class="cadastro-main__titulo">Senha</label>
+                <div class="cadastro-main__eye-container">
+                    <input type="password" placeholder="Crie uma senha" id="password" class= "cadastro-main__input" required>
+                    <i class="bi bi-eye-slash cadastro-main__eye-item" onclick="togglePassword()" id="togglePassword"></i>
+                </div>
+            </div>
+            <div class="cadastro-main__confirme-senha cadastro-main__campo">
+                <label for="email" class="cadastro-main__titulo">Confirme sua senha</label>
+                <div class="cadastro-main__eye-container">
+                    <input type="password" placeholder="Repita a senha criada acima" id="confirm_password" class="cadastro-main__input" required >
+                    <i class="bi bi-eye-slash cadastro-main__eye-item" onclick="toggleConfirmPassword()" id="toggleConfirmPassword"></i>
+                </div>
+            </div>
+            <div class="main__botao--cadastrar">
+                <button type="submit" class="main__botao">Cadastrar</button>
+            </div>
+        </form>
+        <div class="foot__descer"></div>
+    </main>
+    <img src="img/fundoLadoEsquerdoMobile.png" class="lado-esquerdo__fundo">
+    <footer class="footer">
+        <p class="footer__texto">Adopet - 2023</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

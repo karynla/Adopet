@@ -1,0 +1,79 @@
+@import url("styles/cadastro.css");
+@import url("styles/home.css");
+@import url("styles/inicial.css");
+@import url("styles/login.css");
+@import url("styles/mensagem.css");
+@import url("styles/cabecalho-e-fundo.css");
+@import url("styles/perfil.css");
+@import url("styles/rodape.css");
+
+
+:root {
+    --azul-fundo: #3772FF;
+    --branco-fundo: #F7F7F7; 
+    --branco-fundo-input: #F7F7F7;
+
+    --rosa-botao: #FC7071;
+    --rosa-bota-hover: #cd7e7edb;
+    --cinza-eye: #595959;
+
+    --verde-rodape: #36D6AD;
+
+    --azul-fonte: #3772FF;
+    --branco-fonte: #FFFFFF;
+    --cinza-claro-fonte: #8f8c8c;
+    --cinza-titulo-fonte: #737380;
+    --rosa-fonte: #fc7070d7;
+    
+}
+
+
+body {
+    background-color: var(--branco-fundo);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+}
+
+
+@media screen and (min-width: 768px){
+    body {
+        font-size: 18px;
+    }
+}
+
+/* botoes padrao */
+
+.main__container--botao {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.main__botao {
+    background-color: var(--rosa-botao);
+    border: none;
+    border-radius: 5px;
+    color: var(--branco-fonte);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    text-align: center; 
+    text-decoration: none;
+    width: 180px;
+} 
+
+.main__botao:hover {
+    cursor: pointer;
+    background-color: var(--rosa-bota-hover);
+    transition: 0.8ms;
+}
+
+@media screen and (min-width: 768px){
+    .main__botao--inicial {
+        width: 344px;
+    }
+}
